@@ -8,6 +8,8 @@ This repository maintains the Python program of a pipeline for training, optimiz
 
 To run this program, please make sure your environment meets the prerequisites and has the input data "*Calbicans_13Features_6638genes_beforeImputation_210302.tsv*" in the same directory as the code. The output files (i.e. the predictions and figures) will all be located in the same directory as well.
 
+You can utilize the functions provided in this program to generate figures such as PR/ROC curves and distribution plots based on the source data attached to the paper. We provide the optimal random forest classifier trained from 5-fold cross-validation (*rf_clf_optimal.joblib*) so that you can load it directly, fit it with the whole GRACE gene set, and make predictions on all genes. Note that every time you fit this model, it is a new training process and the results may vary slightly in terms of prediction results. We chose one version of reasonable output and reported it in the paper.
+
 ### Prerequisites & Installation
 
 1. Packages essential to the random forest pipeline and the versions that work:
