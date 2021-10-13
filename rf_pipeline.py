@@ -38,7 +38,7 @@ def plotPRcurve(y_test, y_pred_score, filename):
     plt.xlim([0.0, 1.0])
     plt.ylim([0.0, 1.05])
     s = 'AP = %0.2f' % round(average_precision, 3)
-    plt.text(0.6, 0.2, s, fontsize=8)
+    plt.text(0.6, 0.17, s, fontsize=8)
     plt.plot(recall, precision)
     plt.xlabel('Recall')
     plt.ylabel('Precision')
